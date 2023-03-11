@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signin form</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    background-image: url('https://cdn.pixabay.com/photo/2018/07/12/21/32/subscribe-3534409_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: overlay;
+}
+::-webkit-scrollbar{
+	background: transparent;
+}
+.signin{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    border: 3px solid #f1f1f1;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 15px;
+}
+form:hover {
+    opacity: 1;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.profile_photo {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.user_photo {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+</style>
+</head>
+<body>
+<div class="signin">
+    <div>
+    <h2>Sign In Form</h2>
+    <form method="post">
+        <div class="profile_photo">
+        <img src="https://cdn.pixabay.com/photo/2016/04/22/04/57/graduation-1345143_960_720.png" alt="Userprofile" class="user_photo">
+        </div>
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        
+        <button type="submit">Sign In</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <a href="project.html"><button type="button" class="cancelbtn">Cancel</button></a>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+    </form>
+    </div>
+</div>
+</body>
+</html>
