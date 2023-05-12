@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/p-favicon.ico">
+    <title>Download</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body 
+    style="text-align: center;
+    background-color: #444444;
+    margin: 10rem auto;"
+    >
+    <img src="images/giphy.gif" alt="giphy-img">
+    <a href="" download="" id="download-link">
+        <!-- Auto width -->
+        <button 
+        style="background-color: #FF5959;
+        border: none;
+        color: white;
+        padding: 12px 30px;
+        cursor: pointer;
+        font-size: 20px;" 
+        class="btn"><i class="fa fa-download"></i> Download</button>
+    </a>
+
+    <script>
+        var name1 = localStorage.getItem("username");
+        name1 = name1 + "-zipped-website.zip";
+        document.getElementById("download-link").setAttribute("href",name1);
+        document.getElementById("download-link").setAttribute("download",name1);
+    </script>
+</body>
+</html>

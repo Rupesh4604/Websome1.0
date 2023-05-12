@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/p-favicon.ico">
+    <title>Create Now</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:wght@100;400;500;900&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c5032a45dd.js" crossorigin="anonymous"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body class="create-body">
+    <div class="create-form">
+      <form action="/" method="post">
+        <h1 class="main-heading">Create Now</h1>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about" type="button" role="tab" aria-controls="nav-about" aria-selected="true"><i class="fa fa-solid fa-address-card"></i><br> ABOUT</button>
+              <button class="nav-link" id="nav-skills-tab" data-bs-toggle="tab" data-bs-target="#nav-skills" type="button" role="tab" aria-controls="nav-skills" aria-selected="false"><i class="fa fa-solid fa-bullseye"></i><br> SKILLS</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fa fa-solid fa-address-book"></i> <br> CONTACT</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+              <!-- <form> -->
+                <div class="row about-row">
+                  <div class="col-lg-6">
+                    <input type="text" class="form-control firstname" name="firstName" id="firstname" placeholder="First name">
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="text" class="form-control lastname" name="lastName" id="lastname" placeholder="Last name">
+                  </div>
+                </div>
+                <div class="row about-row">
+                  <div class="col-lg-6">
+                    <input type="text" class="form-control" name="knownAs" placeholder="Known as">
+                  </div>
+                </div>
+                <div class="row about-row">
+                  <div class="col-lg-6">
+                    <input type="radio" name="gender" value="boy"> Male<br>
+                    <input type="radio" name="gender" value="girl"> Female<br>
+                    <input type="radio" name="gender" value="other"> Other
+                  </div>
+                </div>
+
+                <div class="row about-row">
+                  <div class="col">
+                    <textarea type="text" class="form-control describe-para" name="aboutPara" placeholder="Describe yourself in not more than 200 words"></textarea><br>
+                  </div>
+                </div>
+                <div class="row about-row">
+                  <div class="col about-next">
+                    <button type="button" class="btn btn-primary next-button" id="about-next-button">Next</button>
+                  </div>
+                </div>
+              <!-- </form> -->
+            </div>
+            <div class="tab-pane fade" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab">
+              <!-- <form> -->
+                <div class="row skill-row">
+                  <div class="col-lg-4">
+                    <input type="text" class="form-control" name="skill1" placeholder="Skill-1">
+                  </div>
+                </div>
+                <div class="row skill-row">
+                  <div class="col">
+                    <textarea type="text" class="form-control skill-des" name="skill1-des" placeholder="Description"></textarea>
+                  </div>
+                </div>
+                <div class="row skill-row addmore-button">
+                  <div class="col-lg-6">
+                    <button type="button" class="btn btn-primary skills-button">Add more</button>
+                  </div>
+                  <div class="col-lg-6 skills-next">
+                    <button type="button" class="btn btn-primary next-button" id="skills-next-button">Next</button>
+                  </div>
+                </div>
+              <!-- </form> -->
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <!-- <form> -->
+                <div class="row contact-row">
+                  <div class="col-lg-6 email-field">
+                    <input type="text" class="form-control" name="email" placeholder="E-Mail">
+                  </div>
+                
+                  <div class="col-lg-6 linkedin-field">
+                    <input type="text" class="form-control" name="linkedIn" placeholder="LinkedIn URL">
+                  </div>
+                </div>
+                <div class="row contact-row">
+                  <div class="col-lg-6 instagram-field">
+                    <input type="text" class="form-control" name="instagram" placeholder="Instagram URL">
+                  </div>
+
+
+                  <div class="col-lg-6 twitter-field">
+                    <input type="text" class="form-control" name="twitter" placeholder="Twitter URL">
+                  </div>
+                </div>
+
+                <div class="row contact-row">
+                  <div class="col contact-button">
+                    <button type="submit" name="submit" class="btn btn-primary submit-button">Submit</button>
+                  </div>
+                </div>
+              <!-- </form> -->
+            </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
